@@ -1,0 +1,40 @@
+name: flutter_todo_app
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0-76.0.dev <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.7.0
+  flutter_riverpod: ^2.1.3
+  collection: ^1.17.0
+  go_router: ^6.0.1
+  riverpod_annotation: ^1.1.1
+  riverpod: ^2.1.3
+  shortid: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.3.3
+  freezed: ^2.3.2
+  json_serializable: ^6.5.4
+  riverpod_generator: ^1.1.1
+
+flutter:
+  uses-material-design: true
+
+scripts:
+  build: flutter pub run build_runner build --delete-conflicting-outputs
+  watch: flutter pub run build_runner watch
